@@ -1,0 +1,259 @@
+/* Variables */
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-light-grey: #EEEEEE;
+  --basic-grey: #DFDFDF;
+  --basic-dark-grey: #D5D5D5;
+  --basic-light-red: #FB565A;
+  --basic-red: #E74246;
+  --basic-dark-red: #D7373B;
+  --basic-light-green: #00CA74;
+  --basic-green: #00BC6C;
+  --basic-dark-green: #00AA62;
+  --basic-light-yellow: #EFC84A;
+  --basic-yellow: #EAB534;
+  --basic-dark-yellow: #E5A722;
+  --basic-black: #000000;
+  --basic-dark-grey: #283136;
+  --basic-light-footer-grey: #666666;
+  --basic-footer-grey: #444444;
+}
+
+/* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-dark-grey);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-navigation {
+  line-height: 20px;
+  color: var(--basic-black);
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-light-grey);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+
+/* Navigation */
+
+
+.site-navigation a,
+.cart-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:focus,
+.cart-navigation a:focus,
+.site-navigation a:hover,
+.cart-navigation a:hover {
+  color: var(--basic-light-red);
+}
+
+.site-navigation a:active,
+.cart-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Features */
+.slider-text h3 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+/* Button */
+.button {
+  font: inherit;
+  text-align: center;
+  font-weight: 500;
+  line-height: 18px;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-light-red);
+  border: none;
+}
+
+.service-button-yellow {
+  background-color: var(--basic-light-yellow);
+}
+
+.service-button-green {
+  background-color: var(--basic-light-green);
+}
+
+.button:hover,
+.button:focus {
+  background-color: var(--basic-red);
+}
+
+.button:active {
+  background-color: var(--basic-dark-red);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.service-button-yellow:hover,
+.service-button-yellow:focus {
+  background-color: var(--basic-yellow);
+}
+
+.service-button-yellow:active {
+  background-color: var(--basic-dark-yellow);
+}
+
+.service-button-green:hover,
+.service-button-green:focus {
+  background-color: var(--basic-green);
+}
+
+.service-button-green:active {
+  background-color: var(--basic-dark-green);
+}
+
+
+/* Service */
+.service-item h3 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+/*About*/
+.about-description-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black)
+}
+
+.about-description-title-list {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-facts-title {
+  font-weight: bold;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.about-description-list {
+  list-style: none;
+}
+
+.about-facts-table th {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+
+.cell sup {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.about-facts-table tr {
+  line-height: 18px;
+}
+
+.cell-1 {
+  width: 119px;
+  height: 64px;
+}
+
+.cell-2 {
+  width: 125px;
+  height: 64px;
+}
+
+.cell-3 {
+  width: 135px;
+  height: 64px;
+}
+
+.cell-4 {
+  width: 119px;
+  height: 37px;
+}
+
+.cell-5 {
+  width: 125px;
+  height: 37px;
+}
+
+.cell-6 {
+  width: 135px;
+  height: 37px;
+}
+
+/* Main footer */
+.main-footer {
+  color: var(--basic-black);
+}
+
+.footer-addres h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.footer-addres p {
+  line-height: 18px;
+  color: var(--basic-light-footer-grey);
+}
+
+.footer-phone {
+  color: inherit;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social-list a {
+  color: inherit;
+}
+
+.footer-social h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-social p {
+  line-height: 22px;
+  color: var(--basic-footer-grey);
+}
