@@ -88,6 +88,10 @@ img {
   color: var(--basic-black);
 }
 
+.slider-features {
+  background-color: var(--basic-light-grey);
+}
+
 /* Button */
 .button {
   font: inherit;
@@ -112,6 +116,7 @@ img {
 .button:hover,
 .button:focus {
   background-color: var(--basic-red);
+  outline: none;
 }
 
 .button:active {
@@ -216,6 +221,116 @@ img {
 .cell-6 {
   width: 135px;
   height: 37px;
+}
+
+/*Catalog*/
+.page-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+  background-color: var(--basic-light-grey);
+}
+
+.sorting h2 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.sorting-item,
+.catalog-item,
+.pagination-list {
+  list-style: none;
+}
+
+.sorting-item a {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.sorting-item a:active {
+  color: var(--basic-black);
+}
+
+.sorting-item a:focus,
+.sorting-item a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-item-current a,
+.sorting-item-current a:hover,
+.sorting-item-current a:focus,
+.sorting-item-current a:active {
+  color: var(--basic-black);
+}
+
+.catalog-popup-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.catalog-popup-title:focus,
+.catalog-popup-title:hover {
+  color: var(--basic-light-red);
+}
+
+.catalog-popup-title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-popup p {
+  line-height: 18px;
+  color: var(--basic-light-footer-grey)
+}
+
+.catalog-popup .button {
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.catalog-popup .button:focus,
+.catalog-popup .button:hover {
+  background-color: var(--basic-red)
+}
+
+.catalog-popup .button:active {
+  background-color: var(--basic-dark-red);
+}
+
+.catalog-popup {
+  background-color: var(--basic-light-grey)
+}
+
+.pagination-item a {
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-light-grey);
+}
+
+.pagination-item a:focus,
+.pagination-item a:hover {
+  background-color: var(--basic-grey);
+}
+
+.pagination-item a:active {
+  background-color: var(--basic-dark-grey);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: var(--basic-black);
+  background-color: rgba(0, 0, 0, 0.0001);
+  border: 3px solid #DBDBDB;
 }
 
 /* Main footer */
