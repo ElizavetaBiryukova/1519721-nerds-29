@@ -4,7 +4,7 @@
   --basic-white: #FFFFFF;
   --basic-light-grey: #EEEEEE;
   --basic-grey: #DFDFDF;
-  --basic-dark-grey: #D5D5D5;
+  --basic-medium-grey: #D5D5D5;
   --basic-light-red: #FB565A;
   --basic-red: #E74246;
   --basic-dark-red: #D7373B;
@@ -320,7 +320,7 @@ img {
 }
 
 .pagination-item a:active {
-  background-color: var(--basic-dark-grey);
+  background-color: var(--basic-medium-grey);
   color: rgba(0, 0, 0, 0.3);
 }
 
