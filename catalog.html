@@ -12,11 +12,11 @@
 <body class="page-body inner-page">
   <header class="main-header">
     <nav class="main-navigation">
-      <div class="main-navigation-wrapper">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-        </a>
-        <div class="container">
+      <div class="main-header-bar">
+        <div class="main-navigation-wrapper">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+          </a>
           <ul class="site-navigation">
             <li><a href="">Студия</a></li>
             <li><a href="">Клиенты</a></li>
@@ -35,7 +35,8 @@
     <section class="page-title-wrapper">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
     </section>
-    <section class="filers">
+    <div class="page-catalog-wrapper">
+    <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <!-- Здесь будет форма фильтра -->
     </section>
@@ -46,12 +47,10 @@
         <li class="sorting-item"><a href="">По типу</a></li>
         <li class="sorting-item"><a href="">По названию</a></li>
       </ul>
-      <!-- Кнопки вниз и вверх
-        <div class="sort-list-updown">
+      <div class="sort-list-updown">
         <a class="sort-list-down" href="" ></a>
         <a class="sort-list-up" href="" ></a>
         </div>
-        -->
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Готовые шаблоны</h2>
@@ -144,27 +143,34 @@
         </li>
       </ul>
     </section>
+    </div>
   </main>
   <footer class="page-footer main-footer">
     <section class="footer-contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
+      <div class="map-contacts">
       <div class="map">
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1646ce44cdede7087c496440cc2f568288fb2582e82333f8122852d55ac9427&amp;source=constructor"
-          width="1440" height="416"></iframe>
+          width="100%" height="416"></iframe>
       </div>
-      <div class="footer-addres">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p>
-          91186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
-          <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        </p>
-        <button class="button">Напишите нам</button>
-      </div>
+        <div class="footer-addres">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p>
+            191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8<br>
+          </p>
+            <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+        <div class="button-addres">
+          <button class="button">Напишите нам</button>
+        </div>
+        </div>
+        </div>
     </section>
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
+      <div class="footer-social-wrapper">
+      <div class="footer-social-icons">
       <ul class="footer-social-list">
         <li>
           <a class="social-button" href="">Вконтакте</a>
@@ -176,8 +182,12 @@
           <a class="social-button" href="">Инстаграм</a>
         </li>
       </ul>
+    </div>
+    <div class="footer-social-tagline">
       <h3>Давайте дружить, это выгодно!</h3>
       <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+      </div>
     </section>
   </footer>
 </body>
