@@ -15,7 +15,7 @@
       <div class="main-header-bar">
         <div class="main-navigation-wrapper">
           <a class="main-header-logo" href="index.html">
-            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+            <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип дизайн-студии Нёрдс">
           </a>
           <ul class="site-navigation">
             <li><a href="">Студия</a></li>
@@ -37,28 +37,28 @@
         <section class="slider-features">
           <h2 class="visually-hidden">Преимущества</h2>
           <div class="slider-control">
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
+            <button class="current" type="button" aria-label="Первый слайд"></button>
+            <button type="button" aria-label="Второй слайд"></button>
+            <button type="button" aria-label="Третий слайд"></button>
           </div>
-          <div>
-          </div>
-          <div class="slider-item">
-            <div class="slider-text">
-              <h3>Долго, дорого,<br>
-                скрупулезно.
-              </h3>
-              <p>
-                Математически выверенный дизайн <br>
-                для вашего сайта или мобильного приложения.
-              </p>
-              <a class="button slider-button" href="">Узнать больше</a>
+          <div class="slider-list">
+            <div class="slider-item slide slide-current">
+              <div class="slider-text">
+                <h3>Долго, дорого,<br>
+                  скрупулезно.
+                </h3>
+                <p>
+                  Математически выверенный дизайн <br>
+                  для вашего сайта или мобильного приложения.
+                </p>
+                <a class="button slider-button" href="">Узнать больше</a>
+              </div>
+              <div class="slider-image">
+                <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Долго, дорого, скрупулезно.">
+              </div>
             </div>
-            <div class="slider-image">
-              <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Долго, дорого, скрупулезно.">
-            </div>
           </div>
-          <div class="slider-item">
+          <div class="slider-item slide">
             <div class="slider-text">
               <h3>Любим математику<br>
                 как никто другой
@@ -73,7 +73,7 @@
               <img src="img/nerds-index-slide2.png" width="760" height="431" alt="Любим математику как никто другой">
             </div>
           </div>
-          <div class="slider-item">
+          <div class="slider-item slide">
             <div class="slider-text">
               <h3>Только ночь,<br>
                 только хардкор
@@ -88,8 +88,9 @@
               <img src="img/nerds-index-slide3.png" width="760" height="431" alt="Только ночь, только хардкор">
             </div>
           </div>
-        </section>
       </div>
+      </section>
+    </div>
     </div>
     <div class="main-container">
       <section class="service">
@@ -107,7 +108,7 @@
             <h3>Приложения</h3>
             <p>
               Покорите топ-10 приложений в <br>
-              AppStore и Googleb Play
+              AppStore и Google Play
             </p>
             <a class="button service-button service-button-green" href="">Заказать</a>
           </div>
@@ -115,7 +116,7 @@
             <h3>Презентации</h3>
             <p>
               Вы даже не подозреваете, <br>
-              на сколько вы изумительны!
+              насколько вы изумительны!
             </p>
             <a class="button service-button service-button-yellow" href="">Заказать</a>
           </div>
@@ -125,14 +126,14 @@
         <h2 class="visually-hidden">О студии</h2>
         <div class="about-description-facts">
           <div class="about-description">
-            <h3 class="about-description-title">Мы - маленькая, но гордая <br>
-              дизайн - студия из Краснодара
+            <h3 class="about-description-title">Мы — маленькая, но гордая <br>
+              дизайн-студия из Краснодара.
             </h3>
             <p class="about-description-text">
               Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br>
-              выше креатива. Работаем не покладая рук, как роботы.
+              превыше креатива. Работаем не покладая рук, как роботы.
             </p>
-            <h3 class="about-description-title-list">Выполняем заказы на разработку:</h3>
+            <p class="about-description-title-list">Выполняем заказы на разработку:</p>
             <ul class="about-description-list">
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для iOS и Android</li>
@@ -141,9 +142,9 @@
           </div>
           <div class="about-facts">
             <img class="about-logo" src="img/nerds-logo-color.png" width="360" height="208" alt="Цветной логотип Нёрдс">
-            <h3 class="about-facts-title">
+            <p class="about-facts-title">
               С 2004 года любим точность во всем:
-            </h3>
+            </p>
             <table class="about-facts-table">
               <tr>
                 <th class="cell cell-1">
@@ -191,47 +192,72 @@
     <section class="footer-contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
       <div class="map-contacts">
-      <div class="map">
-        <iframe
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1646ce44cdede7087c496440cc2f568288fb2582e82333f8122852d55ac9427&amp;source=constructor"
-           ></iframe>
-      </div>
-        <div class="footer-addres">
-          <h3>NЁRDS DESIGN STUDIO</h3>
-          <p>
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8<br>
-          </p>
+        <div class="map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab1646ce44cdede7087c496440cc2f568288fb2582e82333f8122852d55ac9427&amp;source=constructor"></iframe>
+          <img src="img/map.jpg" width="1440" height="416" alt="Расположение дизайн-студии на карте">
+        </div>
+        <div class="container-addres">
+          <div class="footer-addres">
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8<br>
+            </p>
             <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-        <div class="button-addres">
-          <button class="button">Напишите нам</button>
+            <div class="button-addres">
+              <button class="button send-us-button">Напишите нам</button>
+            </div>
+          </div>
         </div>
-        </div>
-        </div>
+      </div>
     </section>
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <div class="footer-social-wrapper">
-      <div class="footer-social-icons">
-      <ul class="footer-social-list">
-        <li>
-          <a class="social-button" href="">Вконтакте</a>
-        </li>
-        <li>
-          <a class="social-button" href="">Фейсбук</a>
-        </li>
-        <li>
-          <a class="social-button" href="">Инстаграм</a>
-        </li>
-      </ul>
-    </div>
-    <div class="footer-social-tagline">
-      <h3>Давайте дружить, это выгодно!</h3>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
+        <div class="footer-social-icons">
+          <ul class="footer-social-list">
+            <li>
+              <a class="social-button vk-icon" href=""></a>
+            </li>
+            <li>
+              <a class="social-button fb-icon" href=""></a>
+            </li>
+            <li>
+              <a class="social-button inst-icon" href=""></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-tagline">
+          <h3>Давайте дружить, это выгодно!</h3>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </section>
   </footer>
+  <!--
+  <section class="modal">
+		<h2>Напишите нам</h2>
+		<form class="send-us-form" action="https://echo.htmlacademy.ru" method="post">
+			<div class="wrapper-modal">
+				<p class="send-us-name">
+					<label for="send-us-name">Ваше имя:</label>
+					<input id="send-us-name" type="text" name="send-us-name" placeholder="Имя Фамилия">
+				</p>
+				<p class="send-us-email">
+					<label for="send-us-email">Ваш e-mail:</label>
+					<input id="send-us-email" type="email" name="send-us-email" placeholder="email@example.com">
+				</p>
+			</div>
+			<p class="send-us-text">
+				<label for="send-us-text">Текст письма:</label>
+				<textarea id="send-us-text" name="send-us-text" placeholder="В свободной форме" rows="5"></textarea>
+			</p>
+			<button type="submit" class="button send-us-form-button">Отправить</button>
+		</form>
+		<button class="modal-close" type="button">Закрыть</button>
+  </section>
+  -->
 </body>
 
 </html>
