@@ -18,7 +18,7 @@
   --basic-dark-grey: #283136;
   --basic-light-footer-grey: #666666;
   --basic-footer-grey: #444444;
-  --basic-footer-button:  #E1E1E1;
+  --basic-footer-button: #E1E1E1;
 }
 
 /* Global */
@@ -209,6 +209,7 @@ img {
 .slide-current {
   display: block;
 }
+
 .slider-control {
   font-size: 0;
   position: absolute;
@@ -332,6 +333,7 @@ img {
 .slider-button {
   padding: 17px 54px 15px 54px;
 }
+
 .send-us-button {
   padding: 17px 44px 15px 44px;
 }
@@ -477,6 +479,7 @@ img {
   position: relative;
   top: -15px;
   right: 12px;
+  font-family: "Roboto";
 }
 
 .about-facts-table tr {
@@ -512,9 +515,11 @@ img {
 .partner-list a:nth-child(2) {
   margin-left: -25px;
 }
+
 .partner-list a:nth-child(3) {
   margin-left: -20px;
 }
+
 .partner-list a {
   position: relative;
 }
@@ -817,14 +822,16 @@ img {
   border-radius: 50%;
   background: linear-gradient(0deg, var(--basic-footer-button), var(--basic-footer-button)), var(--basic-white);
 }
+
 .social-button:focus,
 .social-button:hover {
   background: linear-gradient(0deg, var(--basic-red), var(--basic-red)), var(--basic-white);
 
 }
+
 .social-button:active {
   background: linear-gradient(0deg, var(--basic-dark-red), var(--basic-dark-red)), var(--basic-white);
-box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .social-button::after {
@@ -847,24 +854,31 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   height: 15px;
   background-image: url(../img/Shape_vk.svg);
 }
+
 .fb-icon::after {
   width: 12px;
   height: 22px;
   background-image: url(../img/Shape_fb.svg);
 }
+
 .inst-icon::after {
   width: 21px;
   height: 21px;
   background-image: url(../img/Shape_inst.svg);
 }
-.fb-icon:active::after, .inst-icon:active::after, .vk-icon:active::after {
+
+.fb-icon:active::after,
+.inst-icon:active::after,
+.vk-icon:active::after {
   opacity: 0.3;
 }
+
 .footer-social h3 {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
-  margin-top: 8px;;
+  margin-top: 8px;
+  ;
   margin-bottom: 0;
 }
 
@@ -885,4 +899,109 @@ box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 
 .footer-social-tagline {
   width: 660px;
+}
+
+/*Modal*/
+.modal {
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 960px;
+  padding-top: 63px;
+  padding-right: 100px;
+  padding-bottom: 84px;
+  padding-left: 99px;
+  background-color: var(--basic-white);
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper-modal {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal h2 {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 53px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.send-us-name,
+.send-us-email,
+.send-us-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.send-us-form input {
+  margin: 8px 0 0;
+  box-sizing: border-box;
+  width: 360px;
+  padding-top: 16px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  color: var(--basic-footer-grey);
+  opacity: 0.5;
+  border: 2px solid #d7dcde;
+  outline: 0;
+}
+
+.wrapper-modal p {
+  padding-right: 40px;
+}
+
+.send-us-form textarea {
+  box-sizing: border-box;
+  width: 760px;
+  padding-top: 16px;
+  padding-right: 414px;
+  padding-left: 16px;
+  padding-bottom: 10px;
+  resize: vertical;
+  color: var(--basic-footer-grey);
+  opacity: 0.5;
+  border: 2px solid #d7dcde;
+  margin: 8px 0 0;
+}
+
+.send-us-form-button {
+  width: 260px;
+  margin-top: 26px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  color: var(--basic-white);
+  background-color: var(--basic-light-red);
+}
+
+.modal-close {
+  font-size: 0;
+  position: absolute;
+  left: 1035px;
+  top: 2498px;
+  width: 21px;
+  height: 21px;
+  opacity: 0.3;
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/button-close.svg);
+}
+
+.send-us-form input:hover,
+.send-us-form textarea:hover {
+  border: 2px solid #B4B9BB;
+}
+
+.send-us-form input:focus,
+.send-us-form textarea:focus {
+  border: 2px solid #000000;
+  color: var(--basic-footer-grey);
+}
+
+.send-us-form input:invalid,
+.send-us-form textarea:invalid {
+  border: 2px solid var(--basic-red);
+  color: var(--basic-red);
 }
