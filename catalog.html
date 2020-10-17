@@ -20,7 +20,7 @@
           <ul class="site-navigation">
             <li><a href="">Студия</a></li>
             <li><a href="">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
+            <li class="site-navigation-link-active"><a href="catalog.html">Магазин</a></li>
             <li><a href="">Контакты</a></li>
           </ul>
           <div class="cart-navigation">
@@ -50,18 +50,18 @@
                     "></div>
                   </div>
                   <div class="toggle toggle-min" tabindex="0" style="
-                    left: 5%
+                    left: 7%
                   "></div>
                   <div class="toggle toggle-max" tabindex="0" style="
-                    left: 60%
+                    left: 62%
                   "></div>
                 </div>
                 <div class="price-controls">
                   <label class="min-price">
-                    от <input type="number" name="min-price" value="0">
+                    от <input class="price min-price" type="number" name="min-price" value="0">
                   </label>
                   <label class="max-price">
-                    до <input type="number" name="max-price" value="15000">
+                    до <input class="price max-price" type="text" name="max-price" value="15 000">
                   </label>
                 </div>
               </div>
@@ -121,8 +121,8 @@
             <li class="sorting-item"><a href="">По типу</a></li>
             <li class="sorting-item"><a href="">По названию</a></li>
             <li class="sort-list-updown sorting-item">
-              <a class="sort-list-up sorting-list-current" href=""></a>
-              <a class="sort-list-down" href=""></a>
+              <a class="sort-list-up" href=""></a>
+              <a class="sort-list-down sorting-list-updown-current" href=""></a>
             </li>
           </ul>
         </div>
@@ -214,7 +214,7 @@
             <a class="pagination-button" href="">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-button pagination-button-next" href="">Следущая</a>
+            <a class="pagination-button pagination-button-next" href="">Следующая</a>
           </li>
         </ul>
       </section>
