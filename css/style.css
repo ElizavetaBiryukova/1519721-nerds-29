@@ -1553,6 +1553,10 @@ img {
   background-image: url(../img/button_modal_close.svg);
   cursor: pointer;
   margin: auto;
+    -webkit-animation-name: close;
+            animation-name: close;
+    -webkit-animation-duration: 0.6s;
+            animation-duration: 0.6s;
 }
 
 .modal-close:hover,
@@ -1575,22 +1579,26 @@ outline: none;
   border: 2px solid var(--basic-black);
   color: var(--basic-footer-grey);
 }
-
+/*
 .send-us-form input:invalid,
 .send-us-form textarea:invalid {
-  border: 2px solid var(--basic-red);
+  border: solid 2px var(--basic-red);
   color: var(--basic-red);
-}
+} */
 
 .modal-show {
   display: block;
+  -webkit-animation-name: show;
+          animation-name: show;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .modal-error input[type="text"],
 .modal-error input[type="email"],
 .modal-error textarea {
-  border: solid 2px var(--special-medium-red);
-  color: var(--special-medium-red);
+  border: solid 2px var(--basic-red);
+  color: var(--basic-red);
 }
 
 .modal-error {
@@ -1598,4 +1606,18 @@ outline: none;
   animation-name: shake;
 }
 
+@keyframes show {
+  0%  {transform: translateX(-50%) scale(0);}
+  100%  {transform: translateX(-50%) scale(1);}
+}
 
+@keyframes close {
+  0%  {transform: translateX(-50%) scale(1);}
+  100%  {transform: translateX(-50%) scale(0);} 
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateX(-50%);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-50%) translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(-50%) translateX(10px);}
+}

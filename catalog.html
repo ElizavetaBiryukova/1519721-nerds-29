@@ -268,8 +268,31 @@
       </div>
     </section>
   </footer>
-
-  <script src="writeus.js"></script>
+  <section class="modal modal-send-us">
+    <h2>Напишите нам</h2>
+    <form class="send-us-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="wrapper-modal">
+        <p class="send-us-name">
+          <label for="send-us-name">Ваше имя:
+            <input id="send-us-name" type="text" name="send-us-name" placeholder="Имя Фамилия">
+          </label>
+        </p>
+        <p class="send-us-email">
+          <label for="send-us-email">Ваш email:
+            <input id="send-us-email" type="email" name="send-us-email" placeholder="email@example.com">
+          </label>
+        </p>
+      </div>
+      <p class="send-us-text">
+        <label for="send-us-text">Текст письма:
+          <textarea id="send-us-text" name="send-us-text" placeholder="В свободной форме" rows="5"></textarea>
+        </label>
+      </p>
+      <button type="submit" class="button send-us-form-button" aria-label="Отправить форму">Отправить</button>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть модальное окно"></button>
+  </section>
+  <script src="js/writeus.js"></script>
 </body>
 
 </html>
