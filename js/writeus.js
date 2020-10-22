@@ -2,9 +2,9 @@ const writeUs = document.querySelector(".send-us-button");
 const writePopup = document.querySelector(".modal-send-us");
 const writeClose = writePopup.querySelector(".modal-close");
 const writeForm = writePopup.querySelector(".send-us-form");
-const writeName = writePopup.querySelector(".send-us-name");
-const writeMail = writePopup.querySelector(".send-us-email");
-const writeText = writePopup.querySelector(".send-us-text");
+const writeName = writePopup.querySelector(".contact-name");
+const writeEmail = writePopup.querySelector(".contact-email");
+const writeText = writePopup.querySelector(".contact-text");
 
 let isStorageSupport = true;
 let storage = "";
@@ -15,12 +15,13 @@ try {
   isStorageSupport = false;
 }
 
+
 writeUs.addEventListener("click", function (evt) {
   evt.preventDefault();
   writePopup.classList.add("modal-show");
   if (storage) {
     writeName.value = storage;
-    writeMail.focus();
+    writeEmail.focus();
   } else {
     writeName.focus();
   }
@@ -29,10 +30,11 @@ writeUs.addEventListener("click", function (evt) {
 writeClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   writePopup.classList.remove("modal-show");
+  writePopup.classList.remove("modal-error");
 });
 
 writeForm.addEventListener("submit", function (evt) {
-  if (!writeName.value || !writeMail.value || !writeText.value) {
+  if (!writeName.value || !writeEmail.value || !writeText.value) {
     evt.preventDefault();
     writePopup.classList.remove("modal-error");
     writePopup.offsetWidth = writePopup.offsetWidth;
@@ -49,6 +51,7 @@ window.addEventListener("keydown", function (evt) {
     if (writePopup.classList.contains("modal-show")) {
       evt.preventDefault();
       writePopup.classList.remove("modal-show");
+      writePopup.classList.remove("modal-error");
     }
   }
 });

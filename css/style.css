@@ -266,7 +266,7 @@ img {
   border: 0;
 }
 
-.slider-control .current::before {
+.slider-active-button::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -276,10 +276,32 @@ img {
   border: 2px solid var(--slider-border-grey);
   border-radius: 50%;
 }
+.slider-active-button-two::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  width: 4px;
+  height: 4px;
+  border: 2px solid var(--slider-border-grey);
+  border-radius: 50%;
+}
+.slider-active-button-three::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 75px;
+  width: 4px;
+  height: 4px;
+  border: 2px solid var(--slider-border-grey);
+  border-radius: 50%;
+}
 
 .slider-text {
+  position: relative;
   width: 538px;
   margin-right: 0;
+  z-index: 500;
 }
 
 
@@ -766,14 +788,14 @@ img {
 }
 
 
-.sorting-list-updown {
+.sort-list-updown {
   position: relative;
 }
 
 .sort-list-down::before {
   position: absolute;
-  top: 417px;
-  right: 125px;
+  top: 8px;
+  right: 30px;
   width: 11px;
   height: 10px;
   content: "";
@@ -784,8 +806,8 @@ img {
 
 .sort-list-up::before {
   position: absolute;
-  top: 417px;
-  right: 96px;
+  top: 8px;
+  right: 0px;
   width: 11px;
   height: 10px;
   content: "";
@@ -1458,7 +1480,7 @@ img {
   z-index: 100;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 50px auto;
   width: 960px;
   height: 590px;
   padding-top: 63px;
@@ -1524,12 +1546,11 @@ img {
   padding-right: 414px;
   padding-left: 16px;
   padding-bottom: 10px;
-  resize: vertical;
   color: var(--basic-footer-grey);
   opacity: 0.5;
   border: 2px solid var(--basic-modal-border);
   margin: 8px 0 0;
-
+  resize: none;
 }
 
 .send-us-form-button {
@@ -1579,12 +1600,12 @@ outline: none;
   border: 2px solid var(--basic-black);
   color: var(--basic-footer-grey);
 }
-/*
+
 .send-us-form input:invalid,
 .send-us-form textarea:invalid {
   border: solid 2px var(--basic-red);
   color: var(--basic-red);
-} */
+} 
 
 .modal-show {
   display: block;
@@ -1593,22 +1614,35 @@ outline: none;
   -webkit-animation-duration: 0.6s;
           animation-duration: 0.6s;
 }
-
+/*
 .modal-error input[type="text"],
 .modal-error input[type="email"],
 .modal-error textarea {
   border: solid 2px var(--basic-red);
   color: var(--basic-red);
-}
+} */
 
 .modal-error {
   -webkit-animation-name: shake;
   animation-name: shake;
-}
+}  
 
 @keyframes show {
-  0%  {transform: translateX(-50%) scale(0);}
-  100%  {transform: translateX(-50%) scale(1);}
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes close {
@@ -1617,7 +1651,24 @@ outline: none;
 }
 
 @keyframes shake {
-  0%, 100% {transform: translateX(-50%);}
-  10%, 30%, 50%, 70%, 90% {transform: translateX(-50%) translateX(-10px);}
-  20%, 40%, 60%, 80% {transform: translateX(-50%) translateX(10px);}
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
+
