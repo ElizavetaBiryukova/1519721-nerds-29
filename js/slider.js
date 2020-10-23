@@ -1,4 +1,3 @@
-
 const buttonone = document.querySelector(".slide-button-one");
 const buttontwo = document.querySelector(".slide-button-two");
 const buttonthree = document.querySelector(".slide-button-three");
