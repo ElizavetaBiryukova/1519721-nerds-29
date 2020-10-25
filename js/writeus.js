@@ -6,6 +6,7 @@ const writeName = writePopup.querySelector(".contact-name");
 const writeEmail = writePopup.querySelector(".contact-email");
 const writeText = writePopup.querySelector(".contact-text");
 
+
 let isStorageSupport = true;
 let storage = "";
 

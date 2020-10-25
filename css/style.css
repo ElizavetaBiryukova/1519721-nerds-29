@@ -38,6 +38,7 @@
   --range-controls-white-opacity: rgba(215, 220, 223, 1);
   --range-controls-grey-opacity: rgba(171, 171, 171, 1);
   --modal-black-opacity: rgba(0, 0, 0, 0.4);
+  --modal-border-hover: rgba(180, 185, 187, 1);
 }
 
 /* Global */
@@ -225,7 +226,7 @@ img {
   margin: 0;
   padding: 0;
   width: 1160px;
-  height: 355px;
+  min-height: 355px;
   list-style: none;
 }
 
@@ -299,6 +300,7 @@ img {
   width: 538px;
   margin-right: 0;
   z-index: 500;
+  padding-bottom: 20px;
 }
 
 
@@ -785,18 +787,6 @@ img {
   opacity: 1;
 }
 
-/*
-.sorting-list-current::before {
-  position: absolute;
-  top: 6px;
-  right: 30px;
-  width: 11px;
-  height: 10px;
-  content: "";
-  background-image: url(../img/icon-down-dir-black.svg);
-  opacity: 1;
-} */
-
 .sort-list-down:active::before {
   background-image: url(../img/icon-down-dir-black.svg);
   background-color: var(--basic-white);
@@ -897,7 +887,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .pagination-item {
@@ -1262,7 +1252,7 @@ img {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  margin: 50px 0 22px 50px;
+  margin: 49px 0 22px 50px;
 }
 
 .footer-addres p {
@@ -1283,7 +1273,7 @@ img {
 }
 
 .button-addres {
-  margin-top: 34px;
+  margin-top: 48px;
   margin-left: 50px;
 }
 
@@ -1387,7 +1377,7 @@ img {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
-  margin-top: 8px;
+  margin-top: 6px;
   margin-bottom: 0;
 }
 
@@ -1418,7 +1408,7 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 100;
+  z-index: 1000;
   box-sizing: border-box;
   margin: 50px auto;
   width: 960px;
@@ -1442,7 +1432,7 @@ img {
   font-weight: bold;
   line-height: 53px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .send-us-name,
@@ -1458,7 +1448,7 @@ img {
   box-sizing: border-box;
   width: 360px;
   padding-top: 16px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   padding-left: 16px;
   color: var(--basic-footer-grey);
   opacity: 0.5;
@@ -1489,7 +1479,7 @@ img {
 .send-us-form-button {
   width: 260px;
   margin-top: 26px;
-  padding-top: 17px;
+  padding-top: 16px;
   padding-bottom: 15px;
   color: var(--basic-white);
   background-color: var(--basic-light-red);
@@ -1526,7 +1516,7 @@ outline: none;
 
 .send-us-form input:hover,
 .send-us-form textarea:hover {
-  border: 2px solid rgb(180, 185, 187);
+  border: 2px solid var(--modal-border-hover);
 }
 
 .send-us-form input:focus,
@@ -1535,11 +1525,11 @@ outline: none;
   color: var(--basic-footer-grey);
 }
 
-.send-us-form input:invalid,
-.send-us-form textarea:invalid {
+.contact-email:invalid,
+.contact-name:invalid {
   border: solid 2px var(--basic-red);
   color: var(--basic-red);
-} 
+}  
 
 .modal-show {
   display: block;
