@@ -259,10 +259,6 @@ img {
   border: 0;
 }
 
-.slider-control button:focus {
-  outline: none;
-}
-
 .slider-active-button::before {
   content: "";
   position: absolute;
@@ -543,7 +539,7 @@ img {
   position: relative;
   top: -15px;
   right: 11px;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
 }
 
 .about-facts-table tr {
@@ -607,7 +603,7 @@ img {
   height: 52px;
   margin-top: auto;
   margin-bottom: auto;
-  content: '';
+  content: "";
   background-color: var(--basic-light-grey);
 }
 
@@ -737,7 +733,7 @@ img {
   top: -40px;
   width: 360px;
   height: 40px;
-  content: '';
+  content: "";
   opacity: 0.12;
   background-image: url(../img/browser.svg);
   background-repeat: no-repeat;
@@ -830,7 +826,7 @@ img {
   color: var(--basic-black);
   text-transform: uppercase;
   margin-top: 25px;
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .catalog-popup-title:focus,
@@ -846,33 +842,35 @@ img {
   line-height: 18px;
   color: var(--basic-light-footer-grey);
   margin-top: 0;
-  margin-bottom: 33px;
+  margin-bottom: 47px;
 }
 
-.catalog-popup .button {
+.catalog-popup-button {
   line-height: 18px;
   color: var(--basic-white);
-  width: 200px;
+  padding: 17px 72px 15px 72px;
+  background-color: var(--basic-light-red);
 }
 
-.catalog-popup .button:focus,
-.catalog-popup .button:hover {
-  background-color: var(--basic-red)
+.catalog-popup-button:focus,
+.catalog-popup-button:hover {
+  background-color: var(--basic-red);
 }
 
-.catalog-popup .button:active {
+.catalog-popup-button:active {
   background-color: var(--basic-dark-red);
+  color: var(--basic-white);
 }
 
 .catalog-popup {
   background-color: var(--basic-light-grey);
   width: 360px;
-  height: 231px;
+  min-height: 202px;
   margin-bottom: 30px;
   text-align: center;
   position: absolute;
   bottom: -33px;
-  max-height: 497px;
+  padding-bottom: 30px;
 }
 
 .catalog-item .catalog-popup {
@@ -1075,7 +1073,6 @@ img {
   padding: 0 0 0 36px;
 }
 
-
 .checker-label-radio+label::before {
   content: "";
   position: absolute;
@@ -1085,7 +1082,7 @@ img {
   height: 16px;
   border: 4px solid var(--filter-black-less-opacity);
   border-radius: 70%;
-}
+} 
 
 
 .checker-label-radio:checked+label::after {
@@ -1098,7 +1095,6 @@ img {
   background-color: var(--filter-black-less-opacity);
   border-radius: 70%;
 }
-
 
 .filter-input-checkbox+label::before {
   content: "";
@@ -1122,11 +1118,10 @@ img {
   left: -37px;
   width: 25px;
   height: 23px;
-  background-image: url("../img/shape_.svg");
+  background-image: url("../img/shape.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: var(--basic-white);
-
 }
 
 .filter-options-features {
@@ -1150,7 +1145,7 @@ img {
 }
 
 .filter-input-checkbox:checked+label:hover::after {
-  background-image: url("../img/shapedark_.svg");
+  background-image: url("../img/shapedark.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: var(--basic-white);
@@ -1166,11 +1161,11 @@ img {
 }
 
 .filter-input-checkbox:checked+label:disabled::after {
-  background-image: url("../img/shapedisabled_.svg");
+  background-image: url("../img/shapedisabled.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: var(--basic-white);
-}
+} 
 
 .filter-button {
   width: 260px;
@@ -1331,7 +1326,7 @@ img {
   margin-right: auto;
   margin-bottom: auto;
   margin-left: auto;
-  content: '';
+  content: "";
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1339,21 +1334,21 @@ img {
 .vk-icon::after {
   width: 26px;
   height: 15px;
-  background-image: url(../img/shape_vk_.svg);
+  background-image: url(../img/shape-vk.svg);
   background-color: var(--basic-footer-button);
 }
 
 .fb-icon::after {
   width: 12px;
   height: 22px;
-  background-image: url(../img/shape_fb_.svg);
+  background-image: url(../img/shape-fb.svg);
   background-color: var(--basic-footer-button);
 }
 
 .inst-icon::after {
   width: 21px;
   height: 21px;
-  background-image: url(../img/shape_inst_.svg);
+  background-image: url(../img/shape-inst.svg);
   background-color: var(--basic-footer-button);
 }
 
@@ -1494,7 +1489,7 @@ img {
   opacity: 0.3;
   border: none;
   background-color: transparent;
-  background-image: url(../img/button_modal_close.svg);
+  background-image: url(../img/button-modal-close.svg);
   cursor: pointer;
   margin: auto;
     -webkit-animation-name: close;

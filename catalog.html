@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Дизайн-студия Нёрдс</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
 </head>
 
@@ -40,31 +40,31 @@
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form method="get" action="https://echo.htmlacademy.ru" target="_blank">
           <fieldset class="filter-item">
-              <legend>Стоимость:</legend>
-              <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar" style="
+            <legend>Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="
                       width: 60%;
                       margin-left: 5%
                     "></div>
-                  </div>
-                  <div class="toggle toggle-min" tabindex="0" style="
+                </div>
+                <div class="toggle toggle-min" tabindex="0" style="
                     left: 7%
                   "></div>
-                  <div class="toggle toggle-max" tabindex="0" style="
+                <div class="toggle toggle-max" tabindex="0" style="
                     left: 62%
                   "></div>
-                </div>
-                <div class="price-controls">
-                  <label class="min-price">
-                    от <input class="price min-price min-price-content" type="text" name="min-price" value="0">
-                  </label>
-                  <label class="max-price">
-                    до <input class="price max-price" type="text" name="max-price" value="15 000">
-                  </label>
-                </div>
               </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input class="price min-price min-price-content" type="text" name="min-price" value="0" aria-label="Минимальная цена">
+                </label>
+                <label class="max-price">
+                  до <input class="price max-price" type="text" name="max-price" value="15 000" aria-label="Максимальная цена">
+                </label>
+              </div>
+            </div>
           </fieldset>
           <fieldset class="filter-item">
             <legend class="filter-item-heading">Сетка:</legend>
@@ -78,7 +78,8 @@
                 <label class="checker-label checker-label-radio" for="grid-fix">Фиксированная</label>
               </li>
               <li class="checker filter-option">
-                <input class="visually-hidden checker-label-radio" id="grid-fluid" name="grid" value="fluid" type="radio">
+                <input class="visually-hidden checker-label-radio" id="grid-fluid" name="grid" value="fluid"
+                  type="radio">
                 <label class="checker-label checker-label-radio" for="grid-fluid">Резиновая</label>
               </li>
             </ul>
@@ -87,23 +88,28 @@
             <legend class="filter-item-heading">Особенности:</legend>
             <ul class="filter-options filter-options-features">
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider-filter" id="slider-filter" checked>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider-filter"
+                  id="slider-filter" checked>
                 <label for="slider-filter">Слайдер</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="block-filter" id="block-filter">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="block-filter"
+                  id="block-filter">
                 <label for="block-filter">Блок преимуществ</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news-filter" id="news-filter" checked>
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news-filter"
+                  id="news-filter" checked>
                 <label for="news-filter">Новости</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallary-filter" id="gallary-filter">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallary-filter"
+                  id="gallary-filter">
                 <label for="gallary-filter">Галерея</label>
               </li>
               <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart-filter" id="cart-filter">
+                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="cart-filter"
+                  id="cart-filter">
                 <label for="cart-filter">Корзина</label>
               </li>
             </ul>
@@ -117,9 +123,9 @@
         </div>
         <div class="sorting-sections">
           <ul class="sorting-list">
-            <li class="sorting-item sorting-item-current"><a aria-label="Фильтр по цене"  href="">По цене</a></li>
+            <li class="sorting-item sorting-item-current"><a aria-label="Фильтр по цене" href="">По цене</a></li>
             <li class="sorting-item"><a aria-label="Фильтр по типу" href="">По типу</a></li>
-            <li class="sorting-item"><a  aria-label="Фильтр по названию" href="">По названию</a></li>
+            <li class="sorting-item"><a aria-label="Фильтр по названию" href="">По названию</a></li>
             <li class="sort-list-updown sorting-item">
               <a aria-label="Стрелка вниз" class="sort-list-down sorting-list-current" href=""></a>
               <a aria-label="Стрелка вверх" class="sort-list-up" href=""></a>
@@ -132,74 +138,74 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <a href="">
-              <img src="img/sedona_.jpg" width="360" height="578" alt="Шаблон Седона">
+              <img src="img/sedona.jpg" width="360" height="578" alt="Шаблон Седона">
             </a>
             <div class="catalog-popup">
               <a aria-label="Сайт Sedona" href="">
                 <h3 class="catalog-popup-title">Sedona</h3>
               </a>
               <p>Информационный сайт<br> для туристов</p>
-              <button aria-label="заказать за 9900 рублей" class="button" type="button">9 900 &#8381;</button>
+              <a class="button catalog-popup-button" href="" aria-label="заказать за 9900 рублей">9 900 &#8381;</a>
             </div>
           </li>
           <li class="catalog-item">
             <a href="">
-              <img src="img/pink_.jpg" width="360" height="578" alt="Шаблон Pink">
+              <img src="img/pink.jpg" width="360" height="578" alt="Шаблон Pink">
             </a>
             <div class="catalog-popup">
-              <a aria-label="Сайт Pink App" href="">
-                <h3 class="catalog-popup-title">Pink App</h3>
-              </a>
-              <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
-              <button aria-label="заказать за 9900 рублей"  class="button" type="button">9 900 &#8381;</button>
+                <a aria-label="Сайт Pink App" href="">
+                  <h3 class="catalog-popup-title">Pink App</h3>
+                </a>
+                <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+              <a class="button catalog-popup-button" href="" aria-label="заказать за 9900 рублей">9 900 &#8381;</a>
             </div>
           </li>
           <li class="catalog-item">
             <a href="">
-              <img src="img/borodinski_.jpg" width="360" height="578" alt="Шаблон Borodinski">
+              <img src="img/borodinski.jpg" width="360" height="578" alt="Шаблон Borodinski">
             </a>
             <div class="catalog-popup">
-              <a aria-label="Сайт Barbershop"  href="">
+              <a aria-label="Сайт Barbershop" href="">
                 <h3 class="catalog-popup-title">Barbershop</h3>
               </a>
               <p>Сайт салона красоты.<br> Для мужчин, да.</p>
-              <button aria-label="заказать за 9900 рублей" class="button" type="button">9 900 &#8381;</button>
+              <a class="button catalog-popup-button" href="" aria-label="заказать за 9900 рублей">9 900 &#8381;</a>
             </div>
           </li>
           <li class="catalog-item">
             <a href="">
-              <img src="img/mishka_.jpg" width="360" height="578" alt="Шаблон Mishka">
+              <img src="img/mishka.jpg" width="360" height="578" alt="Шаблон Mishka">
             </a>
             <div class="catalog-popup">
-              <a aria-label="Сайт Mishka"  href="">
+              <a aria-label="Сайт Mishka" href="">
                 <h3 class="catalog-popup-title">Mishka</h3>
               </a>
               <p>Интернет-магазин<br> вязаных игрушек.</p>
-              <button aria-label="заказать за 9900 рублей" class="button" type="button">9 900 &#8381;</button>
+              <a class="button catalog-popup-button" href="" aria-label="заказать за 9900 рублей">9 900 &#8381;</a>
             </div>
           </li>
           <li class="catalog-item">
             <a href="">
-              <img src="img/a_plus_.jpg" width="360" height="578" alt="Шаблон A Plus">
+              <img src="img/a-plus.jpg" width="360" height="578" alt="Шаблон A Plus">
             </a>
             <div class="catalog-popup">
               <a aria-label="Сайт A Plus" href="">
                 <h3 class="catalog-popup-title">A Plus</h3>
               </a>
               <p>Лендинг курсов повышения<br> квалификации</p>
-              <button aria-label="заказать за 9900 рублей" class="button" type="button">9 900 &#8381;</button>
+              <a class="button catalog-popup-button" href="" aria-label="заказать за 9900 рублей">9 900 &#8381;</a>
             </div>
           </li>
           <li class="catalog-item">
             <a href="">
-              <img src="img/kvast_.jpg" width="360" height="578" alt="Шаблон Кваст">
+              <img src="img/kvast.jpg" width="360" height="578" alt="Шаблон Кваст">
             </a>
             <div class="catalog-popup">
               <a aria-label="Сайт Кваст" href="">
                 <h3 class="catalog-popup-title">Кваст</h3>
               </a>
               <p>Промо-сайт производителя<br> крафтового кваса</p>
-              <button aria-label="заказать за 9900 рублей" class="button" type="button">9 900 &#8381;</button>
+              <a class="button catalog-popup-button" href="" aria-label="заказать за 9900 рублей">9 900 &#8381;</a>
             </div>
           </li>
         </ul>
@@ -214,7 +220,8 @@
             <a aria-label="Третья страница каталога" class="pagination-button" href="">3</a>
           </li>
           <li class="pagination-item">
-            <a aria-label="Перейти на следующую страницу каталога" class="pagination-button pagination-button-next" href="">Следующая</a>
+            <a aria-label="Перейти на следующую страницу каталога" class="pagination-button pagination-button-next"
+              href="">Следующая</a>
           </li>
         </ul>
       </section>
@@ -273,7 +280,8 @@
       <div class="wrapper-modal">
         <p class="send-us-name">
           <label for="send-us-name">Ваше имя:
-            <input class="contact-name" id="send-us-name" type="text" name="name" placeholder="Имя Фамилия" pattern="[А-ЯЁA-Z][а-яёa-z]* [А-ЯЁA-Z][а-яёa-z]*">
+            <input class="contact-name" id="send-us-name" type="text" name="name" placeholder="Имя Фамилия"
+              pattern="[А-ЯЁA-Z][а-яёa-z]* [А-ЯЁA-Z][а-яёa-z]*">
           </label>
         </p>
         <p class="send-us-email">
@@ -284,7 +292,8 @@
       </div>
       <p class="send-us-text">
         <label for="send-us-text">Текст письма:
-          <textarea class="contact-text" id="send-us-text" name="message" placeholder="В свободной форме" rows="5" cols="50"></textarea>
+          <textarea class="contact-text" id="send-us-text" name="message" placeholder="В свободной форме" rows="5"
+            cols="50"></textarea>
         </label>
       </p>
       <button type="submit" class="button send-us-form-button" aria-label="Отправить форму">Отправить</button>
